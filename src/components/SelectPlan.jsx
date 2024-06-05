@@ -6,14 +6,13 @@ import {PlanContext } from '../App'
 
 const SelectPlan = () => {
 
-  const {changePlan, billingCycle, handleToggle, plan} = useContext(PlanContext);
-
+  const {changePlan, billingCycle, handleToggle, plan, error, setError} = useContext(PlanContext);
+ 
   const plans = [
     {name: 'Arcade', monthly: 9, yearly: 90},
     {name: 'Advanced', monthly: 12, yearly: 120},
     {name: 'Pro', monthly: 15, yearly: 150}
   ];
-
 
   return (
 		<>
@@ -25,9 +24,10 @@ const SelectPlan = () => {
 				{plans.map((plans, index) => (
 					<div
 						key={index}
-						className={`plan ${plan === plans.name ? 'selected-p' : ""}`}
+						className={`plan ${plan === plans.name ? 'selected-p' : ''}`}
 						onClick={() => {
 							changePlan(plans.name, plans.monthly);
+							setError(false);
 						}}
 					>
 						<img
@@ -35,17 +35,19 @@ const SelectPlan = () => {
 							src={index === 0 ? arcade : index === 1 ? advanced : pro}
 							alt='Logo'
 						/>
-						<h3 className='choose'> {plans.name} </h3>
-						<p className='cost'>
-							{billingCycle === 'monthly'
-								? `$${plans.monthly}/mo`
-								: `$${plans.yearly}/yr`}
-						</p>
-						{billingCycle === 'yearly' && (
-							<p className='discount'>
-								<b>2 months free</b>
+						<div className='item'>
+							<h3 className='choose'> {plans.name} </h3>
+							<p className='cost'>
+								{billingCycle === 'monthly'
+									? `$${plans.monthly}/mo`
+									: `$${plans.yearly}/yr`}
 							</p>
-						)}
+							{billingCycle === 'yearly' && (
+								<p className='discount'>
+									<b>2 months free</b>
+								</p>
+							)}
+						</div>
 					</div>
 				))}
 			</div>
@@ -63,6 +65,7 @@ const SelectPlan = () => {
 				</div>
 				<p>yearly</p>
 			</div>
+			{error && <p className='error'>Please select a plan</p>}
 		</>
   );
 };

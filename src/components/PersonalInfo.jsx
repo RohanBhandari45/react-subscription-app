@@ -49,58 +49,73 @@ const PersonalInfo = () => {
 
   return (
 		<>
-			<div className='header'>
-				<h2>Personal Info</h2>
-				<p>Please provide your name, email address, and phone number.</p>
-			</div>
-			<div className='form'>
-				<form onSubmit={handleSubmit}>
-					<div className='form-group'>
-						<label htmlFor='name'>
-							Name {errors.name && <span className='error'>{errors.name}</span>}
-						</label>
-						<input
-							type='text'
-							id='name'
-							name='name'
-							value={personalInfo.name}
-							onChange={handleChange}
-							placeholder='Harry Potter'
-							// pattern='/^[a-z A-Z]*$/'
-						/>
-					</div>
-					<div className='form-group'>
-						<label htmlFor='email'>
-							Email Address
-							{errors.email && <span className='error'>{errors.email}</span>}
-						</label>
-						<input
-							type='email'
-							id='email'
-							name='email'
-							value={personalInfo.email}
-							onChange={handleChange}
-							placeholder='harrypotter@example.com'
-						/>
-					</div>
-					<div className='form-group'>
-						<label htmlFor='phone'>
-							Phone Number
-							{errors.phone && <span className='error'>{errors.phone}</span>}
-						</label>
-						<input
-							type='tel'
-							id='phone'
-							name='phone'
-							value={personalInfo.phone}
-							onChange={handleChange}
-							placeholder='e.g. +1 234 567 890'
-							// pattern='\d*'
-							title='Please enter a valid phone number'
-						/>
-					</div>
-					<button className='button-new'>Next Step</button>
-				</form>
+			<div className='all1'>
+				<div className='header'>
+					<h2>Personal Info</h2>
+					<p>Please provide your name, email address, and phone number.</p>
+				</div>
+				<div className='form'>
+					<form onSubmit={handleSubmit}>
+						<div className='innerform'>
+							<div>
+								<div className='form-group'>
+									<label htmlFor='name'>
+										Name{' '}
+										{errors.name && (
+											<span className='error'>{errors.name}</span>
+										)}
+									</label>
+									<input
+										type='text'
+										id='name'
+										name='name'
+										value={personalInfo.name}
+										onChange={handleChange}
+										placeholder='Harry Potter'
+										// pattern='/^[a-z A-Z]*$/'
+									/>
+								</div>
+								<div className='form-group'>
+									<label htmlFor='email'>
+										Email Address
+										{errors.email && (
+											<span className='error'>{errors.email}</span>
+										)}
+									</label>
+									<input
+										type='email'
+										id='email'
+										name='email'
+										value={personalInfo.email}
+										onChange={handleChange}
+										placeholder='harrypotter@example.com'
+									/>
+								</div>
+								<div className='form-group'>
+									<label htmlFor='phone'>
+										Phone Number
+										{errors.phone && (
+											<span className='error'>{errors.phone}</span>
+										)}
+									</label>
+									<input
+										type='tel'
+										id='phone'
+										name='phone'
+										value={personalInfo.phone}
+										onChange={handleChange}
+										placeholder='e.g. +1 234 567 890'
+										// pattern='\d*'
+										title='Please enter a valid phone number'
+									/>
+								</div>
+							</div>
+							<div className='button'>
+								<button className='button-new'>Next Step</button>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</>
   );

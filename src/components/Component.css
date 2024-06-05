@@ -1,399 +1,375 @@
 /* Universal */
 
 .header {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
 }
 
 .header p {
-    margin-top: 5px;
+	margin-top: 5px;
+}
+
+
+.innerform {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.button{
+    display: flex;
+	justify-content: right;
 }
 
 .button-g {
-    height: 40px;
-    width: 90px;
-    position: absolute;
-    top: 78%;
-    cursor: pointer;
-    background-color: white;
-    color: grey;
-    border-radius: 10px;
-    border: none;
+	height: 40px;
+	width: 90px;
+	cursor: pointer;
+	background-color: white;
+	color: grey;
+	border-radius: 10px;
+	border: none;
 }
 
 .button-g:hover {
-    color: #8f9aae;
+	color: #8f9aae;
 }
 
 .button-n {
-    height: 40px;
-    width: 90px;
-    position: absolute;
-    left: 67.5%;
-    top: 77.5%;
-    background-color: #03295a;
-    color: white;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
+	height: 40px;
+	width: 90px;
+	left: 67.5%;
+	background-color: #03295a;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
 }
 
 .button-n:hover {
-    background-color: #164a89;
+	background-color: #164a89;
 }
 
 /* ListItems.jsx */
 
 .left {
-    display: flex;
-    align-items: center;
-    margin: 35px;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-}
-
-.info-text {
-    color: white;
+	display: flex;
+	align-items: center;
 }
 
 .info-text-p {
-    color: #9192fa;
+	color: #9192fa;
+}
+
+.info-text {
+	color: white;
 }
 
 .number {
-    color: white;
-    height: 30px;
-    width: 30px;
-    border: solid white .5px;
-    border-radius: 50%;
-    background-color: #483eff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 13px;
+	color: white;
+	height: 30px;
+	width: 30px;
+	border: solid white 0.5px;
+	border-radius: 50%;
+	background-color: #483eff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 13px;
 }
 
 .selected {
-    background-color: #bbe2fa;
-    color: #3a5c83;
+	background-color: #bbe2fa;
+	color: #3a5c83;
 }
 
 /* PersonalInfo.jsx */
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
 }
 
 .form-group input {
-    border: solid rgb(216, 216, 216);
-    border-radius: 10px;
-    margin: 5px;
-    padding: 13px;
-    cursor: pointer;
+	border: solid rgb(216, 216, 216);
+	border-radius: 10px;
+	margin: 5px;
+	padding: 13px;
+	cursor: pointer;
 }
 
 .form-group label {
-    margin-left: 7px;
-    display: flex;
-    justify-content: space-between;
+	margin-left: 7px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .form-group input:hover {
-    border-color: rgb(242, 165, 242);
+	border-color: rgb(242, 165, 242);
 }
 
 .text {
-    margin-top: 7px;
+	margin-top: 7px;
 }
 
 .error {
-    color: red;
+	color: red;
+	text-align: center;
+	margin-top: .5rem;
 }
 
 .button-new {
-    height: 40px;
-    width: 90px;
-    position: absolute;
-    left: 67.5%;
-    top: 77.5%;
-    cursor: pointer;
-    background-color: #03295a;
-    color: white;
-    border-radius: 10px;
-    border: none;
+	height: 40px;
+	width: 90px;
+	cursor: pointer;
+	background-color: #03295a;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
 }
 
 /* AddOns.jsx */
 
 .addon {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 45px 0px 40px 20px;
-    background-color: #f8f9fe;
-    width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 1.5rem;
+	background-color: #f8f9fe;
 }
 
 .addon input {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .addon label {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .addon h3 {
-    margin: 0;
-    font-size: 16px;
+	margin: 0;
+	font-size: 16px;
 }
 
 .addon p {
-    margin: 0;
-    font-size: 12px;
-    color: #666;
+	margin: 0;
+	font-size: 12px;
+	color: #666;
 }
 
 .addon span {
-    font-weight: bold;
+	font-weight: bold;
+}
+
+.select:hover{
+	cursor: pointer;
 }
 
 .selected-a {
-    border-color: #a3a0c8;
+	border-color: #a3a0c8;
 }
 
 /* SelectPlan.jsx */
 
 .box {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 50px 0px 0px 0px;
-}
-
-.toggle {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin: 50px 0px 0px 0px;
 }
 
 .plan {
-    position: relative;
-    width: 125px;
-    border: solid rgb(154, 236, 236) .10px;
-    border-radius: 10px;
-    transition: height 0.3s ease;
-    cursor: pointer;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
+	position: relative;
+	width: 110px;
+	border: solid rgb(154, 236, 236) 0.1px;
+	border-radius: 10px;
+	transition: height 0.3s ease;
+	cursor: pointer;
+	transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .plan:hover {
-    background-color: #f8f9fe;
+	background-color: #f8f9fe;
 }
 
 .choose {
-    margin-top: 35px;
-    margin-left: 5px;
+	margin-top: 35px;
+	margin-left: 5px;
 }
 
 .cost {
-    margin: 5px;
+	margin: 5px;
 }
 
 .img {
-    margin-left: 15px;
-    margin-top: 8px;
+	margin-left: 15px;
+	margin-top: 8px;
 }
 
 .toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px 0px 0px 120px;
-    background-color: #f8f9fe;
-    width: 250px;
-    height: 50px;
-    border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f8f9fe;
+	width: 100%;
+	margin-top: 2.5rem;
+	height: 50px;
+	border-radius: 10px;
 }
 
 .toggle-switch {
-    width: 55px;
-    height: 24px;
-    background-color: #174a8b;
-    border-radius: 12px;
-    margin: 0 10px;
-    position: relative;
-    cursor: pointer;
+	width: 55px;
+	height: 24px;
+	background-color: #174a8b;
+	border-radius: 12px;
+	margin: 0 10px;
+	position: relative;
+	cursor: pointer;
 }
 
 .toggle-button {
-    width: 21px;
-    height: 21px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 1px;
-    left: 3px;
-    transition: transform 0.3s ease;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 1.55px;
+	left: 3px;
+	transition: transform 0.3s ease;
 }
 
 .toggle-button.monthly {
-    transform: translateX(1px);
+	transform: translateX(1px);
 }
 
 .toggle-button.yearly {
-    transform: translateX(26px);
+	transform: translateX(26px);
 }
 
 .discount {
-    font-size: 1em;
-    margin-left: 5px;
-    margin-top: 0px;
+	font-size: 1em;
+	margin-left: 5px;
+	margin-top: 0px;
 }
 
 .selected-p {
-    background-color: #e7e7e7;
-    border-color: #a8a4c8;
+	background-color: #e7e7e7;
+	border-color: #a8a4c8;
 }
+
+
 
 /* Summary.jsx */
 
 .plan-overview {
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 60px;
-    width: 400px;
-    margin-left: 2px;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+	padding: 20px;
+	margin-top: 60px;
+	margin-left: 2px;
 }
 
 .plan-details {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
 }
 
 .plan-type {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .change-link {
-    color: #4838d1;
-    cursor: pointer;
-    margin-bottom: 20px;
+	color: #4838d1;
+	cursor: pointer;
+	margin-bottom: 20px;
 }
 
 .plan-cost {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .summary .content {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
 }
 
 .total-cost {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    color: #685fe2;
-    margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	color: #685fe2;
+	margin-top: 20px;
 }
 
 .line {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 /* ThankYou.jsx */
 
 .thanks-right {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
 }
+
 
 .image {
-    display: flex;
-    justify-content: center;
-    height: 80px;
+	display: flex;
+	justify-content: center;
+	height: 70px;
 }
+
 
 .thanks-right p {
-    text-align: left;
-    margin: 0px 50px 0px 50px;
-    font-size: 20px;
+	text-align: center;
+	font-size: 120%;
 }
+
 
 .thanks-right h3 {
-    text-align: center;
-    margin-bottom: 10px;
+	text-align: center;
+	margin-bottom: 10px;
 }
+
 
 .wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 110px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 110px;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+        padding: 0;
+	}
+
+	.left-section {
+		display: flex;
+        height: 30%;
+        width: 100%;
+       
+	}
+
+    .info-text,
+    .info-text-p{
+        display: none;
+    }
+
 }
 
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header {
-        margin-bottom: 1rem;
-    }
-
-    .button-g, .button-n, .button-new {
-        height: 35px;
-        width: 80px;
-        top: 75%;
-    }
-
-    .left {
-        margin: 20px;
-    }
-
-    .addon {
-        width: 100%;
-        margin: 20px 0px 20px 0px;
-    }
-
-    .box {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .toggle {
-        margin: 20px 0px 0px 0px;
-        width: 200px;
-    }
-
-    .plan-overview {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .thanks-right p {
-        margin: 0px 20px 0px 20px;
-        font-size: 16px;
-    }
-
-    .thanks-right h3 {
-        font-size: 18px;
-    }
-
-    .wrap {
-        margin-top: 50px;
-    }
-}

@@ -32,7 +32,7 @@ const AddOns = () => {
               checked={addons.some(item => item.id === addOn.id)}
               onChange={() => handleToggleAddOn(addOn)}
             />
-            <label htmlFor={addOn.id}>
+            <label htmlFor={addOn.id} className='select'>
               <div>
                 <h3>{addOn.name}</h3>
                 <p>{addOn.description}</p>
