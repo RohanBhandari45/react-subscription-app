@@ -28,7 +28,7 @@ body {
 	gap: 1.5rem;
 	width: 274px;
 	height: 567px;
-	background-image: url('sidebar.svg');
+	background-image: url('../public/sidebar.svg');
 	border-radius: 10px;
 	margin: 10px;
 }
